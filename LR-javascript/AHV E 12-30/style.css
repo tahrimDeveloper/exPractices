@@ -1,0 +1,25 @@
+button {
+  padding: 15px 20px;
+  background: red;
+  color: azure;
+  border-radius: 9px;
+  border: 0;
+  cursor: pointer;
+}
+button:hover, #btnLudo:hover {
+  background: black;
+  color: aqua;
+}
+
+#btnLudo {
+  padding: 15px 20px;
+  background: rgb(84, 10, 212);
+  color: rgb(237, 233, 236);
+  border-radius: 9px;
+  border: 0;
+  cursor: pointer;
+}
+#imgLudo {
+  width: 200px;
+  height: 200px;
+}

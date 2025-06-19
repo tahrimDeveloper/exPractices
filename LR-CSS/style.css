@@ -1,0 +1,353 @@
+:root {
+  --PriColor: #34495e;
+  --SecColor: #756666;
+  --TdColor: rgb(8, 117, 33);
+  --width: 50%;
+  --padding: 20px;
+  --blue: blue;
+}
+*{box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body::after { content: 'ABDullah';}
+
+body {
+  background: url(ami.jpg);
+ background-attachment: fixed;
+ margin: 0; }
+
+.form {
+  width: 80%;
+  border: 2px solid green;
+  margin: 2px auto;
+  background-color: #34495e;
+  padding: 5%;
+  text-align: center;
+}
+.pi {
+  display: flex;
+  padding: 10px;
+ justify-content: space-between;
+}
+.cpi {
+  flex-basis: 32%;
+}
+.cpi img {
+margin-bottom: 10px;
+vertical-align: middle;
+width: 100%;
+}
+
+.main-grid {
+  background: #01070d;
+  width: 90%;
+  margin: 20px auto;
+  padding: 5px;
+  border: 5px rgb(236, 229, 229) solid;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  /* grid-template-columns: repeat( 3, 100px); */
+  /* grid-template-columns: 2fr 1fr 1fr; */
+  /* grid-template-columns: auto auto; */
+
+}
+.child-grid {
+  background: #f8f803;
+  padding: 10px;
+  color: rgb(59, 81, 6);
+  margin: 1%;
+
+}
+.child-grid a {
+  background: var(--SecColor);
+  color: #9e0808;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.main-flex {
+  background: #34495e;
+  width: 90%;
+  margin: 20px auto;
+  padding: 5px;
+  border: 5px black dotted;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+.child-flex {
+  background: #066ed6;
+  padding: 10px;
+  color: rgb(176, 243, 9);
+  margin: 1%;
+  /* flex-basis: 28%; */
+}
+.child-flex a {
+  background: var(--SecColor);
+  color: #9e0808;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#ani {
+  background-color: #34495e;
+  border: var(--TdColor) solid 5px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  position: relative;
+  opacity: 40%;
+  z-index: 1;
+  transition: 1s;
+  animation-name: tahrim;
+  animation-duration: 7s;
+  /* animation-delay: 0.3s; */
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes tahrim {
+  0% {
+    left: 0;
+    top:0;
+    background: #756666;
+  }
+  20% {
+    left: 300px;
+    top:0;
+    background: #9e0808;
+  }
+  40% {
+    left: 300px;
+    top: 300px;
+    background: darkblue;
+  }
+  80% {
+    left: 0;
+    top: 300px;
+    background: violet;
+  }
+  100% {
+    left: 0;
+    top:0;
+    background: #756666;
+  }
+}
+
+#emni {
+  background-color: #34495e;
+  border: #fff solid 5px;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  transition: 2s;
+}
+
+#emni:hover {
+  /* transform: translate(-10px, 10px); */
+  transform: rotate(180deg);
+  /* transform: scale(2, -4); */
+  /* transform: skewY(-25deg); */
+}
+
+
+.form h2 {
+  color: #fff;
+  margin-bottom: 0;
+}
+.form p {
+  color: #756666;
+  margin-top: 0;
+}
+
+.child-form {
+width: 90%;
+margin-bottom: 10px;
+text-align: left;
+}
+.child-form label {
+  display: block;
+}
+.child-form input, textarea {
+  width: 96%;
+  padding: 10px 3%;
+  border-color: rebeccapurple;
+  border-radius: 10px;
+}
+.child-form input[type='button'] {
+  width: auto;
+  padding: 10px 5%;
+  background: rgb(15, 18, 15);
+  color: #fff;
+  border: #756666 solid 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 3s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+
+.child-form input[type='button']:hover { 
+background: #fff;
+color: #000;
+}
+
+
+#nav-menu {
+  background: #34495e;
+  position: sticky;
+  top: 0;
+}
+#nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align:center;
+}
+#nav-menu li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav-menu li a {
+  display: block;
+  padding: 12px 15px;
+  color: gold;
+  text-decoration: none;
+  font-family: sans-serif ;
+  font-variant: small-caps;
+}
+#nav-menu li a:hover {
+  background-color: black;
+ color: aqua;
+}
+
+/* dropdown-menu style */
+
+#nav-menu ul ul {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  background: #34495e;
+  display: none; 
+  z-index: 999;
+}
+#nav-menu ul ul li {
+  display:block;
+}
+#nav-menu ul li:hover ul {
+  display: block;
+}
+#nav-menu ul li:hover a {
+  background: rgb(18, 17, 17);
+}
+#nav-menu ul li:hover li a {
+  background: rgba(4, 79, 9, 0.548);
+}
+#nav-menu ul ul li a:hover {
+  background: rgb(8, 132, 166);
+}
+
+h4{
+  font-family: "Bungee Spice", serif;
+  font-size: 90%;
+  font-size: 30px;
+  font-weight: normal;
+  font-variant: small-caps;
+ }
+
+.pr { 
+  width: 90% ;
+  height: 100px;
+  overflow: auto;
+  margin: 5px;
+  padding: 5px;
+  background-color: red;}
+
+  .eyes::first-line{
+    color: aliceblue;
+  }
+  .eyes::first-letter{
+    color: blue; }
+.eyes::selection{ 
+  background-color: blueviolet;
+  color: rgb(255, 255, 255);
+}
+    .eye {
+    width: 100px;
+    padding-right: 5px;
+    height: fit-content;
+    opacity: 0.7;
+    float:left ;
+  }
+  .eyes {
+    text-align: justify;
+    padding-top: none;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+table, td, th { 
+  border: 1px solid blue;
+  padding: 5px 10px;
+}
+table { width: 80%; }
+tr { background-color: blueviolet; }
+tr:hover { background-color: aqua;}
+th { background-color: green;}
+.table { width: 80%;
+overflow: hidden;
+overflow-x: auto;
+overflow-y: scroll; }
+
+.bc {
+  list-style-type: square;
+  list-style-position: inside;
+}
+.bc {
+  background: Red;
+  width: 80%;
+  padding: 25px;
+list-style-position: inside;
+}
+.bc2 { 
+  background: violet;
+  padding: 5px;
+  
+  border-bottom: 4px solid tomato;
+}
+a.btn {
+text-decoration: none;
+background: red;
+border: 2px solid red;
+color: #fff;
+padding: 10px 25px;
+display: inline-block;
+font-family: sans-serif;
+border-radius: 35px;
+}
+a.btn:hover {
+  background: blueviolet;
+  color: #fff;
+  font-weight: bold;
+}
+
+.old {
+  background-image: url(ami.jpg);
+  background-size: 150px 150px;
+  }
+
+h1 {
+ border-left: 10px solid rgba(6, 6, 159, 0.842);
+ width: 90%;
+ padding: 10px;
+}
+h2 {
+  color:black
+}

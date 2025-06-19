@@ -1,0 +1,30 @@
+button{ 
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+#boro {
+    width: 400px;
+    height: 400px;
+    background: #255327;
+    position: relative;
+    border: 10px solid;
+    border-radius: 5px;
+}
+#vitor {
+    width: 40px;
+    height: 40px;
+    background: #4b3e1b;
+    position: absolute;
+    border: 5px solid;
+    border-radius: 10px;
+}

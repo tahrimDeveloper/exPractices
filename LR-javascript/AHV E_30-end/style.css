@@ -1,0 +1,71 @@
+#bodys {
+  background-color: rgba(184, 182, 180, 0.648);
+}
+#divs ul {
+  text-transform: uppercase;
+  text-shadow: 0 0 50px #0c0c0c;
+  text-align: center;
+  color: aliceblue;
+}
+#divs li {
+  margin: 30px 40px;
+  padding: 10px;
+  width: 50px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #fffffff9;
+  cursor: pointer;
+}
+.pink {
+  background: #fd79a8;
+}
+.blue {
+  background: #3498db;
+}
+.green {
+  background: #2ecc71;
+}
+.red {
+  background: #e74c3c;
+}
+.purple {
+  background: #9b59b6;
+}
+
+button {
+  padding: 15px 20px;
+  background: red;
+  color: azure;
+  border-radius: 9px;
+  border: 0;
+  cursor: pointer;
+}
+button:hover, #btnLudo:hover {
+  background: black;
+  color: aqua;
+  
+}
+
+#roots {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  height: auto;
+  background: #89858535;
+  border-radius: 9px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* position: relative; */
+  margin-bottom: 10px;
+
+}
+
+.flexss {
+  margin: 20px;
+  padding: 20px;
+  background: #89858535;
+  border-radius: 9px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}

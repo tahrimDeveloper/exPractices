@@ -1,0 +1,38 @@
+/* h1=> selector,
+color=> property,
+red=> value.
+after value=> declaration. 
+
+. => class selector
+# => id selector
+, => group selector
+* => unversal selector
+
+() perent thisis
+{} carly bresis
+ [] sqare breket
+*/
+
+h5 {
+  font-size:  25px;
+  color: blueviolet;
+ }
+ .one { color: tomato; }
+ #two {color:blueviolet}
+img {
+  width:200px; 
+  height: 200px;
+}
+
+video{
+  width:200px; 
+  height: 200px;
+}
+div {
+  background-color: aqua;
+  color: rgb(30, 30, 50);
+  margin: 2px;
+}
+table, td, tr, th {
+border: 1px solid #ddd;  
+}
